@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="0.7">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Avon">
+   <meta name="author" content="Shaira Mae S. Cellona">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avon - Beauty and Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #e6007e;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffcccb;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.hero .btn {
+  background-color: #e6007e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #cc0066;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content:center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.category {
+  text-align: center;
+  width: 30%;
+}
+
+.category h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.category p {
+  font-size: 1.2rem;
+}
+
+/* Product List */
+.product-list {
+  padding: 50px 20px;
+  text-align:center;
+  background: #ffffff;
+}
+.product-list h2 {
+  font-size: 3rem;
+  margin-right: 30px;
+}
+.product-list h2 {
+  font-size: 3rem;
+  margin-right: 30px;
+}
+.product-item {
+  display:flexbox;
+  margin: 20px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.product-item button {
+  padding: 10px 20px;
+  background-color: #e6007e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-item button:hover {
+  background-color: #cc0066;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e6007e;
+  color: white;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #e6007e;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #e6b0e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3em;
+  color: #e6007e;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #2b2b2b;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #e6007e;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #d5006b;
+}
+
+footer {
+  background-color: #e6007e;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+.products {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: rgba(255, 172, 234, 0.377);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+} 
+.product h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+.product h3 {
+font-size: 1.5em;
+margin-top: 15px;
+.product p {
+  font-size: 1.2em;
+  color: #666;
+}
+} 
+.product h4 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h4 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h5 {
+font-size: 1.5em;
+scroll-margin-bottom: 15px;
+}
+.product h5 {
+font-size: 1.5em;
+scroll-margin-bottom: 15px;
+}
+.product h6 {
+font-size: 1.5em;
+margin-left: 15px;
+}
+.product h6 {
+font-size: 1.5em;
+margin-left: 15px;
+}
+.product h7 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h7 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h8 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h8 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h9 {
+font-size: 1.5em;
+scroll-margin-inline-start:  15px;
+}
+.product h9 {
+font-size: 1.5em;
+scroll-margin-inline-start: 15px;
+}
+.product h10 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h10 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h11 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product h11 {
+font-size: 1.5em;
+margin-inline-end: 15px;
+}
+.product h12 {
+font-size: 1.5em;
+margin-inline-end: 15px;
+}
+.product h12 {
+font-size: 1.5em;
+margin-right: 15px;
+}
+.product p {
+font-size: 1.5em;
+color: #666;
+}
+.product span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #e6007e;
+}
+
+
+/* General Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #ffffff;
+}
+
+a {
+text-decoration: none;
+color: #333;
+}
+
+/* Header Styles */
+header {
+background-color: #e6007e;
+padding: 1rem 0;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+.navbar .logo h1 {
+color: #ffffff;
+font-size: 1.8rem;
+}
+
+.nav-links {
+display: flex;
+list-style-type: none;
+}
+
+.nav-links li {
+margin: 0 1rem;
+}
+
+.nav-links li a {
+color: #ffffff;
+font-size: 1rem;
+text-transform: uppercase;
+}
+
+/* Main Section */
+main {
+padding: 3rem 0;
+}
+
+.about-section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+.about-text {
+flex: 1;
+padding-right: 2rem;
+}
+.about-text h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #e6007e;
+}
+
+.about-text p {
+font-size: 1.1rem;
+color: #3a3a3a;
+margin-bottom: 1.5rem;
+}
+
+.about-image {
+flex: 1;
+}
+
+.about-image img {
+width: 100%;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Our Core Values */
+.our-values {
+background-color: #fff;
+padding: 2rem 0;
+text-align: center;
+}
+
+.our-values h3 {
+font-size: 2rem;
+margin-bottom: 2rem;
+color: #e6007e;
+}
+
+.values-container {
+display: flex;
+justify-content: space-around;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.value-item {
+flex: 1;
+padding: 1rem;
+text-align: center;
+}
+
+.value-item h4 {
+font-size: 1.4rem;
+color: #e6007e;
+margin-bottom: 1rem;
+}
+
+.value-item p {
+font-size: 1rem;
+color: #555;
+}
+/* Footer */
+footer {
+background-color: ##e6007e;
+color: #fff;
+padding: 1rem 0;
+text-align: center;
+}
+
+footer p {
+font-size: 1rem;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AVON</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your Beauty Starts Here</h2>
+        <p>Discover the best in skincare, makeup, and wellness.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+    <section class="categories">
+        <div class="category">
+            <h3>Skincare</h3>
+            <p>Find the best products for your skin.</p>
+        </div>
+        <div class="category">
+            <h3>Makeup</h3>
+            <p>Enhance your beauty with our makeup collection.</p>
+        </div>
+        <div class="category">
+            <h3>Fragrance</h3>
+            <p>Discover your signature scent.</p>
+        </div>
+    </section>
+    <section class="product-list">
+        <h2>Our Top Products, Discover the Beauty and Wellness of Avon!</h2>
+        <div class="product-item">
+            <img src="https://4.bp.blogspot.com/-xgGjDrrNLi8/VSM_sTubv7I/AAAAAAAADHU/npRNipfFEaQ/s1600/Avon-Anew.JPG" alt="Product 1">
+            <h3>Skincare</h3>
+            <p>₱923</p>
+        </div>
+        <div class="product-item">
+            <img src="https://n2.sdlcdn.com/imgs/d/1/5/Avon-Lipstick-Red-Supreme-4g-SDL863096130-1-5d8e0.jpeg" alt="Product 2">
+            <h3>Make-up</h3>
+            <p>₱299</p>
+        </div>
+        <div class="product-item">
+            <img src="https://i5.walmartimages.com/asr/bfb743cc-64b4-45c6-8857-6918414d80ec.2b6c86e73dfe6f4a9d9ddde0f922f87a.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="Product 3">
+            <h3>Fragrance</h3>
+            <p>₱700</p>
+        </div>
+    </section>
+    
+    <section class="products">
+      <h2>Our Popular Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://www.avon.ph/dam/jcr:8d949f1c-5bce-4bf0-8fd7-9cd0fdf9b720/1468945.jpg" alt="Avon Product 1">
+          <h3>Avon Skin So Soft</h3>
+          <p>Softens and moisturizes the skin. Perfect for daily use.</p>
+        <span>₱189</span>
+        </div>
+        <div class="product">
+          <img src="https://i2.wp.com/thinkbeautytoday.com/wp-content/uploads/2016/09/Anew-Ultimate-SkinCare.jpg" alt="Avon Product 2">
+          <h3>Avon Anew Ultimate</h3>
+          <p>Anti-aging cream for radiant, youthful skin.</p>
+          <span>₱399</span>
+        </div>
+        <div class="product">
+          <img src="https://www.avon.ph/dam/jcr:4faabea7-2945-46e8-b14f-a48064b06744/1501847.jpg" alt="Avon Product 3">
+          <h3>Feeling Fresh Deodorant</h3>
+          <p>Beat the sweat, Switch to 72-hr freshness.</p>
+          <span>₱119</span>
+        </div>
+        <div class="product">
+          <img src="https://ph-test-11.slatic.net/p/92bbf259615e48b3c6a09eecb7e01368.png" alt="Avon Product 4">
+          <h3>Avon Natural Face Care</h3>
+          <p>Skincare made simple</p>
+          <span>₱139</span>
+        </div>
+        <div class="product">
+          <img src="https://www.avon.ph/dam/jcr:917fe287-8ae5-4924-beb6-61f2a41df5c8/1446713.jpg" alt="Avon Product 5">
+          <h3>Fragrance Imari, Wear your sensuality</h3>
+          <p>Let your smell be luxury.</p>
+          <span>₱439</span>
+        </div>
+        <div class="product">
+          <img src="https://www.jpkosmetyki.pl/environment/cache/images/500_500_productGfx_3856/AVON-Far-Away-100ml.webp" alt="Avon Product 6">
+          <h3>Fragrance Far Away </h3>
+          <p>Make a memorable impact with a fragrance that empowers you to unlock your confident and stylish itself.</p>
+          <span>₱829</span>
+        </div>
+        <div class="product">
+          <img src="https://shop.avon.my/product/image/large/1228341_1.jpeg" alt="Avon Product 7">
+          <h3> Fragrance Black Suede</h3>
+          <p>Masculine scents in refreshing body spray form.</p>
+          <span>₱299</span>
+        </div>
+        <div class="product">
+          <img src="https://down-ph.img.susercontent.com/file/ph-11134207-7qul5-lg7fkg8sa7i08e" alt="Avon Product 8">
+          <h3>Fragrance Heaven and Scent</h3>
+          <p>Happy times, with spritzes & splashes.</p>
+          <span>₱389</span>
+        </div>
+        <div class="product">
+          <img src="https://i.pinimg.com/originals/60/ad/09/60ad095bbe5cc8f9b8887c2d39dbe0e5.jpg" alt="Avon Product 9">
+          <h3>Avon True color Lipstick</h3>
+          <p>Long-Lasting, vibrant lip color in various shades.</p>
+          <span>₱379</span>
+        </div>
+        <div class="product">
+          <img src="https://www.avon.ph/dam/jcr:bdbd2604-53b0-4ebd-90d6-59108d463918/1474764.jpg" alt="Avon Product 10">
+          <h3>Avon Superschock Mascara</h3>
+          <p> For Stand Out plumed up volume.</p>
+          <span>₱299</span>
+        </div>
+        <div class="product">
+          <img src="https://a2zstocksales.com/website/wp-content/uploads/2020/11/s-l1600-1.png" alt="Avon Product 11">
+          <h3>Avon Flawless Match Foundation</h3>
+          <p>Natural and Buildable, Medium to full coverage.</p>
+          <span>₱459</span>
+        </div>
+        <div class="product">
+          <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/133650/avon-true-color-glimmerstick-lipliner-chocolate-0-25-g_1_display_1514282236_475dc6cd.jpg" alt="Avon Product 12">
+          <h3>Avon Color Glimmersticks Lip Liner </h3>
+          <p>Defines & Shapes for a Full lock</p>
+          <span>₱259</span>
+        </div>
+    </section>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Avon</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="about-text">
+                    <h2>About Avon</h2>
+                    <p>At Avon, we are committed to empowering women everywhere by offering high-quality beauty products that inspire confidence and individuality. With a history dating back to 1886, Avon has been a global leader in direct sales, giving women the tools to achieve financial independence and success.</p>
+                    <p>We believe in the power of beauty to make the world a better place, and we are proud to offer a diverse range of skincare, makeup, fragrance, and wellness products to suit every need. Our mission is to enrich the lives of our customers and representatives by providing the highest level of service, support, and opportunity.</p>
+                </div>
+        </section>
+        <section class="our-values">
+            <h3>Our Core Values</h3>
+            <div class="values-container">
+                <div class="value-item">
+                    <h4>Empowerment</h4>
+                    <p>We empower women to take control of their lives, both personally and professionally.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Integrity</h4>
+                    <p>We are committed to doing the right thing for our customers, representatives, and the communities we serve.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Innovation</h4>
+                    <p>We constantly strive to create innovative products and solutions that meet the evolving needs of our customers.</p>
+                </div>
+            </div>
+        </section>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+            }
+            .container {
+                width: 50%;
+                margin: 50px auto;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                color: #d61c5e;
+            }
+            .contact-info {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .contact-info p {
+                margin: 5px 0;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                font-weight: bold;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background: #d61c5e;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover {
+                background: #b0174a;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Contact Avon</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong>shairamaecellona122010 <a href="shairamaecellona122010@gmail.com"></a></p>
+                <p><strong>Phone:</strong>0946-240-6140/0955-706-0660</p>
+                <p><strong>Address:</strong>Gapan City N.E., Bayanihan Maharlika High-way, Anamel Village</p>
+            </div>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+          <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Avon Products, Inc. All Rights Reserved.
+                Author: Shaira Mae S. Cellona
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
